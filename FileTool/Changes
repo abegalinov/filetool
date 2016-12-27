@@ -1,0 +1,6 @@
+Revision history for Perl extension FileTool.
+
+0.01  Wed Sep 21 23:35:38 2016
+	- original version; created by h2xs 1.23 with options
+		-AX -n FileTool
+
