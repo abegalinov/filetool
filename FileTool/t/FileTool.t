@@ -20,7 +20,7 @@ chmod 0777, $FILE2;
 
 my $ft = new_ok( 'FileTool' => [path => $DIR, remove_ww => 1] );
 
-ok( eq_array([ $ft->process() ], [ $FILE2 ]), 'FileTool->process()' );
+is_deeply( [ $ft->process() ], [ $FILE2 ], 'FileTool->process()' );
 
 ok( !( (stat($FILE2))[2] & S_IWOTH ), 'Removed file permission' );
 
